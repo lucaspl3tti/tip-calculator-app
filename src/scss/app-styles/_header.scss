@@ -1,0 +1,9 @@
+.heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: $cyan-dark-gray-200;
+    font-weight: $font-weight-bold;
+}
