@@ -7,12 +7,7 @@
   "browserslist": [
     "last 2 versions",
     "> 5%"
-  ],
-  "bugs": {
-    "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
-    "email": "plamen@athlonsofia.com"
-  },
-  "contributors": [
+  ],"contributors": [
     {
       "name": "Jan-Luca Splettstößer",
       "email": "jan-luca@spletti.info",
@@ -58,10 +53,10 @@
     "node": "^12 || >=14"
   },
   "keywords": [
-    "webpack",
-    "boilerplate",
-    "template",
-    "setup"
+    "frontend-mentor",
+    "tip calculator",
+    "javascript",
+    "css"
   ],
   "license": "MIT",
   "private": false,
