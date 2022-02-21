@@ -29,3 +29,30 @@ footer {
         color: hsl(228, 45%, 44%);
     }
 }
+
+@include media-breakpoint-up(lg) {
+    main {
+        background-color: $cyan-light-gray-200;
+        border-radius: 0;
+    }
+
+    footer {
+        background-color: $cyan-light-gray-200;
+    }
+
+    .container {
+        background-color: $white;
+        border-radius: 25px;
+        padding: 0;
+        max-width: 1300px;
+        max-height: 520px;
+
+        &--form {
+            border-radius: 25px 25px 0 0;
+        }
+
+        &--footer {
+            border-radius: 0 0 25px 25px;
+        }
+    }
+}

@@ -51,3 +51,51 @@
     border-color: $cyan-light-gray-200;
     color: $cyan-600;
 }
+
+@include media-breakpoint-up(lg) {
+    .container__right {
+        padding: 50px 50px 50px 0;
+    }
+
+    .tip-result {
+        display: flex;
+        flex-flow: row wrap;
+        height: 100%;
+        padding: 50px;
+
+        .tip-amount,
+        .bill-total,
+        .reset-values {
+            flex: 0 0 100%;
+        }
+
+        .tip-amount,
+        .bill-total {
+            margin-bottom: 25px !important;
+        }
+    }
+
+    .tip-result__heading {
+        font-size: $font-size-normal;
+    }
+
+    .tip-result__heading {
+        font-size: 20px;
+    }
+
+    .tip-result__result-text {
+        font-size: 42px;
+
+        .dollar-sign {
+            font-size: inherit;
+        }
+
+        .tip-result__calculated {
+            font-size: inherit;
+        }
+    }
+
+    .reset-values {
+        align-self: flex-end;
+    }
+}

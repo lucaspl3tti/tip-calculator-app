@@ -88,3 +88,59 @@
         color: $cyan-600;
     }
 }
+
+.input_labels {
+    display: flex;
+    justify-content: space-between;
+
+    .form-label {
+        flex: 0 0 50%;
+    }
+}
+
+.error-message {
+    opacity: 0;
+    font-size: 1rem;
+    transition: opacity .3;
+}
+
+.error {
+    .error-message {
+        color: $error-color;
+        opacity: 1;
+    }
+
+    .form-control {
+        border-color: $error-color;
+    }
+
+    .btn--check {
+        border-color: $error-color;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #tipCalculatorForm {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .container__left,
+    .container__right {
+        flex: 0 0 50%;
+    }
+
+    .container__left {
+        padding: 50px 50px 0 50px;
+    }
+
+    .select-tip__checkboxes {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+
+        .select-tip__input {
+            flex: 0 0 calc(33.33% - 14px);
+        }
+    }
+}

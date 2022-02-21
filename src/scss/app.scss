@@ -24,13 +24,6 @@
 @import "bootstrap/mixins";
 
 /* Components */
-
-/* Browser specific styles */
-@import 'dirty/hacks';
-
-/* Demo Page styles */
-@import 'demo';
-
 @import 'app-styles/general';
 @import 'app-styles/header';
 @import 'app-styles/form';
