@@ -1,7 +1,7 @@
 /* By Athlon Front-End Team */
 /* import font from google and bootstrap icon font */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
 
 /* Core variables */
 @import 'base/vars';
@@ -19,9 +19,9 @@
 @import 'base/mixins';
 
 /* Vendor */
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
 
 /* Components */
 @import 'app-styles/general';

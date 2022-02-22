@@ -1,7 +1,7 @@
 /**
  * This Plugin handles the custom calculating tip fuction for the tip calculator app
  */
- export default class CalculateTipPlugin {
+export default class CalculateTipPlugin {
     constructor(el) {
         // select the element
         this.el = document.querySelector(el);
