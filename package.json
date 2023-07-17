@@ -1,7 +1,7 @@
 {
   "author": "Jan-Luca Splettstößer <jan-luca@spletti.info> (https://www.spletti.info)",
   "name": "@lucaspl3tti/tip-calculator-app",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "Challenge from frontendmentor.io to create a tip-calculator-app using HTML, CSS and JS.",
   "homepage": "https://github.com/lucaspl3tti/tip-calculator-app/blob/master/README.md",
   "browserslist": [
@@ -14,68 +14,38 @@
       "url": "https://www.spletti.info"
     }
   ],
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
-    "autoprefixer": "^10.4.0",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^10.2.3",
-    "css-loader": "^6.5.1",
-    "css-minimizer-webpack-plugin": "^3.1.1",
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb": "^19.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "html-webpack-plugin": "^5.5.0",
-    "image-minimizer-webpack-plugin": "^3.2.3",
-    "imagemin": "^8.0.1",
-    "imagemin-gifsicle": "^7.0.0",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.1",
-    "mini-css-extract-plugin": "^2.4.4",
-    "postcss": "^8.3.11",
-    "postcss-loader": "^6.2.0",
-    "sass": "^1.43.4",
-    "sass-lint": "^1.13.1",
-    "sass-loader": "^12.3.0",
-    "terser-webpack-plugin": "^5.2.5",
-    "webpack": "^5.68.0",
-    "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0",
-    "webpack-merge": "^5.8.0"
-  },
-  "engines": {
-    "node": "^12 || >=14"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:scss": "sass-lint -v -q",
+    "lint:js": "eslint --ext .ts src/ts/**/*.ts",
+    "lint:js-fix": "eslint --ext .ts src/ts/**/*.ts --fix"
   },
   "keywords": [
-    "frontend-mentor",
-    "tip calculator",
-    "javascript",
-    "css"
+    "typescript",
+    "scss",
+    "html5",
+    "vite",
+    "frontend-mentor"
   ],
-  "license": "MIT",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:lucaspl3tti/tip-calculator-app.git"
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/bootstrap": "^4.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "sass": "^1.53.0",
+    "sass-lint": "^1.13.1",
+    "typescript": "^5.1.6",
+    "vite": "^2.9.9"
   },
-  "scripts": {
-    "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
-    "watch": "webpack --config configuration/webpack.dev.config.js --mode=development --watch",
-    "bundle": "npm install && npm run watch",
-    "dev": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
-    "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
-    "lint:sass": "sass-lint -v -q",
-    "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
-  },
-  "target": "web",
   "dependencies": {
-    "bootstrap-icons": "^1.8.1"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
+    "deepmerge": "^4.3.1"
   }
 }

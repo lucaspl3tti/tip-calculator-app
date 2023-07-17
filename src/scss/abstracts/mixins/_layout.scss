@@ -1,0 +1,76 @@
+/**
+* ##### Layout Mixins #####
+*/
+// spacing
+$space-base: 4px;
+
+@function spacing($spacing: 1) {
+  @return $space-base * $spacing;
+}
+
+// paddings
+@mixin paddingY(
+  $paddingTop,
+  $paddingBottom: $paddingTop,
+  $isImportant: false
+) {
+  @if $isImportant {
+    $paddingTop: $paddingTop !important;
+    $paddingBottom: $paddingBottom !important;
+  }
+
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+}
+
+@mixin paddingX(
+  $paddingLeft,
+  $paddingRight: $paddingLeft,
+  $isImportant: false
+) {
+  @if $isImportant {
+    $paddingLeft: $paddingLeft !important;
+    $paddingRight: $paddingRight !important;
+  }
+
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+}
+
+// margins
+@mixin marginY(
+  $marginTop,
+  $marginBottom: $marginTop,
+  $isImportant: false
+) {
+  @if $isImportant {
+    $marginTop: $marginTop !important;
+    $marginBottom: $marginBottom !important;
+  }
+
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
+}
+
+@mixin marginX(
+  $marginLeft,
+  $marginRight: $marginLeft,
+  $isImportant: false
+) {
+  @if $isImportant {
+    $marginLeft: $marginLeft !important;
+    $marginRight: $marginRight !important;
+  }
+
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+}
+
+// positioning
+@mixin abs-position($top: 0, $right: auto, $bottom: auto, $left: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

@@ -1,0 +1,69 @@
+/**
+* ##### Media Query Mixins #####
+*/
+// resposive behavior
+@mixin phone-only {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin phone-portrait-up {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin phone-portrait-down {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait-up {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait-down {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin desktop-down {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin desktop-large-up {
+  @media (min-width: $breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin desktop-4k-up {
+  @media (min-width: $breakpoint-4k) {
+    @content;
+  }
+}

@@ -1,9 +1,10 @@
 /**
- * Print Stylesheet
+ * print stylesheet
 */
-
-@media print {
-  @page { margin: 1cm; }
+@include media-print {
+  @page {
+    margin: 1cm;
+  }
 
   body {
     background: $white;
